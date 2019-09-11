@@ -1,0 +1,28 @@
+h1 {
+    color: yellow;
+    background-color: #ce6464;
+    padding: 7px;
+    padding-left: 15px;
+}
+.content{
+    border: 1px solid black;
+    padding: 15px;
+    display: flex; 
+}
+.ducks, .geckos{
+    flex-grow: 1;
+    border: 3px solid blue;
+}
+.geckos {
+    margin-left: 15px;
+}
+.content h2{
+    text-align: center;
+}
+.content-column-container {
+    display: flex;
+}
+.content-column-container > div {
+   flex-grow: 1;
+   border: 1px solid black;
+}
