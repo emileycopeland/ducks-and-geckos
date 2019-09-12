@@ -5,16 +5,14 @@ h1 {
     padding-left: 15px;
 }
 .content{
-    border: 1px solid black;
-    padding: 15px;
     display: flex; 
 }
 .ducks, .geckos{
-    flex-grow: 1;
-    border: 3px solid blue;
+    flex-basis: 50%;
+    border: 3px solid #ce6464;
 }
-.geckos {
-    margin-left: 15px;
+.ducks{
+    margin-right: 15px; 
 }
 .content h2{
     text-align: center;
@@ -23,6 +21,14 @@ h1 {
     display: flex;
 }
 .content-column-container > div {
-   flex-grow: 1;
+   flex-basis: 50%;
    border: 1px solid black;
+   border-bottom: none; 
+}
+.content-column-container img{
+    width: 100%;
+}
+.info {
+    font-size: 18px;
+    padding: 5px;
 }
