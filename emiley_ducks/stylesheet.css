@@ -4,25 +4,38 @@ h1 {
     padding: 7px;
     padding-left: 15px;
 }
-.content{
-    display: flex; 
-}
 .ducks, .geckos{
     flex-basis: 50%;
     border: 3px solid #ce6464;
 }
-.ducks{
-    margin-right: 15px; 
-}
 .content h2{
     text-align: center;
 }
+.content{
+    display: block; 
+}    
 .content-column-container {
-    display: flex;
+    display: block;
+}
+.ducks{
+    margin-right: 0; 
+}
+@media screen and (min-width: 500px) {
+    .content-column-container {
+        display: flex;
+    }
+}
+@media screen and (min-width: 700px) {
+    .content{
+        display: flex; 
+    }
+    .ducks{
+        margin-right: 15px; 
+    }
 }
 .content-column-container > div {
-   flex-basis: 50%;
-   border: 1px solid black;
+    flex-basis: 50%;
+    border: 1px solid black;
    border-bottom: none; 
 }
 .content-column-container img{

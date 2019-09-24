@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  width: 100%;
+  font-size: 14px;
+  line-height: 24px;
+  font-family: 'Montserrat', sans-serif;
+  color: #666;
+  background-color: #fff;
+}
+#main {
+  border-right: 2px solid #e2e6e9;
+  border-left: 2px solid #e2e6e9;
+  margin: 0 auto;
+}
+#page-content {
+  position: relative;
+  /*padding: 0 60px;  Publix */
+  /*width: 1002px; Publix */
+  background: #fff;
+  overflow: hidden;
+}
+
+/* @media screen and (max-width: 1065px) {
+  #page-content {
+    padding: 0 0px;
+  }
+}  Publix */
+
+.page-width {
+  width: 100%;
+  max-width: 1124px;
+}
+
+@media screen and (min-width: 768px) {
+  .page-width {
+    width: calc(100% - 80px);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .page-width {
+    width: calc(100% - 120px);
+  }
+}

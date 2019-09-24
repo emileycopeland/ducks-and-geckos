@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+
+/*Begin Squeeze-header*/
+.squeeze-header-container {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	padding-bottom: 80px;
+	font-family: Montserrat,sans-serif;
+	color: #1e2935;
+
+    margin: auto;
+    position: fixed; /* Publix */
+    z-index: 100; /* Publix */
+    padding: 0;
+	top: 0px; /* Publix */
+    left:50%; /* Publix */
+    transform:translateX(-50%); /* Publix */
+}
+.squeeze-header-container *, .squeeze-header-container :after, .squeeze-header-container :before {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+.squeeze-header-container .squeeze-header {
+	display: table;
+	text-align: center;
+	padding: 20px;
+	border-bottom: 1px solid #e2e6e9;
+    background: #fff;
+    width: 100%; /* Publix */
+    /*position: fixed;  Publix */
+	/*z-index: 100; Publix*/
+}
+.squeeze-header-container .mobile-only{
+	display: table-cell;	
+}	
+
+.squeeze-header-container .desktop-only {
+	display: none;
+}
+
+@media only screen and (min-width: 768px) {
+	.squeeze-header-container .mobile-only {
+		display: none;
+	}
+
+	.squeeze-header-container .desktop-only {
+		display: table-cell;
+	}
+}
+.squeeze-header-container .back, .squeeze-header-container .title-container, .close {
+	vertical-align: middle;
+}
+.squeeze-header-container .back{
+	width: 80px;
+	text-align: left;
+	cursor: pointer;
+}
+
+.squeeze-header-container .back img{
+	width: 20px;
+    height: 20px;
+}
+.squeeze-header-container .back.img-container .logo-image {
+    width: 30px;
+    height: 30px;
+    min-width: 30px;
+}
+.squeeze-header-container .close {
+	width: 220px;
+	text-align: right;
+	cursor: pointer;
+	color: #256b0c;
+	letter-spacing: .7px;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: 13px;
+	padding: 0;
+	font-weight: 700;
+	line-height: 23px;
+	float: none; /* Rare */
+}
+
+
+.squeeze-header-container .close {
+    width: 80px;
+    text-align: right;
+    cursor: pointer;
+    color: #256b0c;
+    letter-spacing: .7px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 13px;
+    padding: 0;
+    font-weight: 700;
+    line-height: 23px;
+}
+.squeeze-header-container .close.desktop-only {
+    width: 220px;
+}
+    .squeeze-header-container .close img {
+	width: 25px;
+}
+.squeeze-header-container .title-container {
+    display: table-cell;
+}
+@media only screen and (min-width: 768px) {
+    .squeeze-header-container .title-container {
+        padding-left: 100px;
+    }
+}
+.squeeze-header-container .page-title {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0;
+    padding: 0px; /* Rare */
+    border-bottom: none; /* Rare */
+    line-height: inherit; /* Rare */
+}
+.squeeze-header-container .page-subtitle {
+	font-size: 14px;
+	line-height: 18px;
+	margin-top: 5px;
+	font-weight: 700;
+}
+/*End Squeeze-header*/
+
+/*Begin footer*/
+.site-footer, .site-footer *, :before, :after {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.site-footer {
+	font-family: Montserrat,sans-serif;
+	color: #1e2935;	
+}
+.site-footer #footer-wrapper {
+	display: grid;
+    grid-auto-flow: dense;
+	z-index: 7000;
+    -ms-grid-columns: 1fr 1fr;
+    -ms-grid-rows: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: auto;
+    grid-gap: 0;
+    float: none; /* Rare */
+    margin-left: 0px; /* Rare */
+    margin-right: 0px; /* Rare */
+    
+}
+.site-footer .footer-legal {
+	grid-column-start: 1;
+    grid-column-end: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    -ms-grid-row: 4;
+    -ms-grid-row-span: 1;
+    background-color: #6b737c;
+    margin-bottom: 0;
+    padding: 40px 0 35px;
+    padding-right: 16px;
+    padding-left: 16px;
+    /* width: 1122px; Publix */
+    /* margin: auto; Publix */
+}
+.site-footer .footer-legal .legal-links {
+	text-align: center;
+	list-style: none;
+	margin: 0;
+}
+
+@media only screen and (min-width: 768px) {
+	.site-footer .footer-legal .legal-links {
+		text-align: left;
+		padding-left: 0;
+	}
+}
+.site-footer .legal-links li {
+	display: inline;
+	line-height: 1.2em;
+}
+
+.site-footer .legal-links li:not(:last-child):after {
+	content: "\205f";
+    font-size: 10px;
+    letter-spacing: -1px;
+    background-color: #fff;
+}
+
+.site-footer .legal-links li a {
+    padding: 0 15px;
+    vertical-align: bottom;
+    color: #fff;
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+    line-height: 23px
+}
+
+.site-footer .footer-legal .legal-copyright {
+	padding: 15px;
+	color: #fff;
+	font-size: 12px;
+	letter-spacing: 1px;
+	line-height: 16px;
+	text-align: center;
+}
+@media only screen and (min-width: 768px) {
+	.site-footer .footer-legal .legal-copyright {
+		text-align: left;
+		
+	}
+}
+/*End footer*/
