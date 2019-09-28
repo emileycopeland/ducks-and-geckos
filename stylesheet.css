@@ -8,40 +8,40 @@ h1 {
     flex-basis: 50%;
     border: 3px solid #ce6464;
 }
-.content h2{
+.topic-column-container h2{
     text-align: center;
 }
-.content{
+.topic-column-container{
     display: block; 
 }    
-.content-column-container {
+.media-column-container {
     display: block;
+    border-top: 1px solid black;
 }
 .ducks{
     margin-right: 0; 
 }
 @media screen and (min-width: 500px) {
-    .content-column-container {
+    .media-column-container {
         display: flex;
     }
 }
 @media screen and (min-width: 700px) {
-    .content{
+    .topic-column-container{
         display: flex; 
     }
     .ducks{
         margin-right: 15px; 
     }
 }
-.content-column-container > div {
+.media-column-container > div {
     flex-basis: 50%;
-    border: 1px solid black;
-   border-bottom: none; 
 }
-.content-column-container img{
+.media-column-container img{
     width: 100%;
 }
 .info {
     font-size: 18px;
     padding: 5px;
+    border-left: 1px solid black;
 }
